@@ -37,7 +37,7 @@ def myNetwork():
 
     info( '*** Add hosts\n')
     h1 = net.addHost('h1', cls=Host, ip='10.0.1.0/24', defaultRoute='via 192.168.1.1')
-    h2 = net.addHost('h2', cls=Host, ip='10.0.0.2', defaultRoute=None)
+    h2 = net.addHost('h2', cls=Host, ip='10.0.2.0/24', defaultRoute=None)
 
     info( '*** Add links\n')
     net.addLink(s1, h1)
